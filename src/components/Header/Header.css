@@ -14,3 +14,8 @@
     gap:2rem;
     color: white;
 }
+
+.header-menu>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}

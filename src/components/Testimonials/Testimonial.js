@@ -22,12 +22,11 @@ function Testimonial() {
       </div>
       <div className="right-t">
         <div></div>
-        <div></div>
+       <div></div>
         <img src={testimonialsData[selected].image} alt="reviewer"></img>
         <div className="arrows">
           <img src={leftArrow} alt="left arrow"></img>
           <img src={rightArrow} alt="left arrow"></img>
-        
         </div>
       </div>
     </div>

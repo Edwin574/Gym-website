@@ -1,8 +1,9 @@
-.Testimonial{
+.Testimonials{
     display: flex !important;
     gap: 1rem;
     padding: 0 2rem;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-direction: row;
 
     /* width: 100vh; */
     
@@ -10,11 +11,11 @@
 .left-t{
     display: flex;
     position: relative;
-    /* flex: 1 1; */
+    flex: 1 1;
     flex-direction: column;
     text-transform: uppercase;
     color: white;
-    width: 48%;
+    /* width: 48%; */
     /* height: 400px; */
    
 }
@@ -33,7 +34,7 @@ letter-spacing: 2px;
 line-height: 40px;
 }
 .right-t{
-    /* flex: 1; */
+    flex: 1;
     position: relative;
     /* width: 48%; */
     
@@ -66,10 +67,9 @@ line-height: 40px;
 }
 .arrows{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     position: absolute;
-    bottom: 1rem;
-    left: 46%;
+    bottom: 0.5rem;
 }
 .arrows>img{
     width: 1.5rem;

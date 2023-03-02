@@ -17,7 +17,7 @@ function Testimonial() {
     selected === tLength - 1 ? setSelected(0) : setSelected((curr) => curr + 1);
   };
   return (
-    <div className="Testimonials">
+    <div className="Testimonials" id="testimonials">
       <div className="left-t">
         <span>Testimonials</span>
         <span className="stroke-text">What they</span>

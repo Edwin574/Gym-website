@@ -7,18 +7,20 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
+import NumberCounter from "number-counter";
 
 const Hero = () => {
   const transition = { type: "sprin", duration: 4 };
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
         {/* The best add*/}
         <div className="the-best-ad">
           <motion.div
-            initial={{ left: "238px" }}
+            initial={{ left: mobile ? "164px" : "238px" }}
             whileInView={{ left: "8px" }}
             transition={{ ...transition, type: "tween" }}
           ></motion.div>
@@ -43,13 +45,22 @@ const Hero = () => {
         {/*statistics section*/}
         <div className="figures">
           <div>
-            <span>+140</span> <span>expert coaches</span>
+            <span>
+              <NumberCounter end={140} start={100} delay="4" preFix="+" />
+            </span>{" "}
+            <span>expert coaches</span>
           </div>
           <div>
-            <span>+978</span> <span>members joined</span>
+            <span>
+              <NumberCounter end={978} start={900} delay="4" preFix="+" />
+            </span>{" "}
+            <span>members joined</span>
           </div>
           <div>
-            <span>+50</span> <span>fitness progress</span>
+            <span>
+              <NumberCounter end={50} start={1} delay="4" preFix="+" />
+            </span>{" "}
+            <span>fitness progress</span>
           </div>
         </div>
         {/*hero buttons*/}
@@ -74,8 +85,8 @@ const Hero = () => {
         {/*Hero images */}
         <img src={hero_image} alt="a person in a gym" className="hero-image" />
         <motion.img
-          initial={{ right: '11rem' }}
-          whileInView={{ right: '20rem' }}
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "20rem" }}
           transition={transition}
           src={hero_image_back}
           alt="backgroung lines for decoration"

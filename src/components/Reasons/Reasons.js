@@ -20,6 +20,7 @@ function Reasons() {
         <img src={image4} alt="someone in a gym" />
       </div>
       <div className="right-r">
+        <div className="blur blur-r"></div>
         <span>some reasons</span>
         <div>
           <span className="stroke-text">why </span>

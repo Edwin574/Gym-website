@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
 }
-
+.hero-blur{
+  width: 40rem;
+  height: 30rem;
+  left: 0;
+}
 .left-h {
   padding: 2rem;
   padding-top: 1.5rem;

@@ -31,7 +31,9 @@ function Join() {
           <div className="right-j">
               <form ref={form} className="email-container" onSubmit={sendEmail}>
                   <input type='email' name='user_email' placeholder="Enter your email address" />
-                  <button type="submit" className="btn btn-j">JOIN NOW</button>
+          <button type="submit" className="btn btn-j" onClick={() => {
+              alert('Your request has been recieved.Check your Email for details')
+                  }}>JOIN NOW</button>
               </form> 
           </div>
     </div>

@@ -126,7 +126,7 @@
 .hero-image{
   position: absolute;
   top: 10rem;
-  right: 8rem;
+  right: 1rem;
   width: 23rem;
 }
 .hero-image-back{
@@ -141,11 +141,11 @@
   gap: 2rem;
   background-color: var(--caloryCard);
   border-radius: 5px;
-  padding: 1rem;
-  width: 12rem;
+  padding: .5rem;
+  width: 11rem;
   position: absolute;
   top: 32rem;
-  right: 28rem;
+  right: 25rem;
   
 }
 .calories>img{
